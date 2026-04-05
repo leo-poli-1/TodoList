@@ -1,0 +1,9 @@
+.flex{
+    display: flex;
+}
+
+button{
+    padding: 2px 2px;
+    margin: 0 2px;
+    font-size: 15px; 
+}

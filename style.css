@@ -1,9 +1,156 @@
-.flex{
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
-button{
-    padding: 2px 2px;
-    margin: 0 2px;
-    font-size: 15px; 
+body {
+font-family: 'DM Sans', sans-serif;
+min-height: 100vh;
+background: rgb(222, 218, 248);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 60px 20px 80px;
+color: rgba(43, 0, 128, 0.78);
+}
+
+h1 {
+font-family: 'DM Serif Display', serif;
+font-size: 42px;
+font-weight: 400;
+letter-spacing: -1px;
+margin-bottom: 8px;
+}
+
+form {
+  width: 100%;
+  max-width: 460px;
+}
+
+input#todos-input {
+width: 100%;
+max-width: 460px;
+border: 1.5px solid rgb(190, 184, 235);
+background: white;
+border-radius: 14px;
+padding: 14px 50px 14px 18px;
+color: rgb(31, 31, 109);
+font-size: 15px;
+font-family: 'DM Sans', sans-serif;
+box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
+}
+
+input#todos-input:focus {
+border-color:rgb(121, 4, 239);
+box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+input#todos-input::placeholder {
+color: rgb(190, 184, 235);
+}
+
+#todos {
+width: 100%;
+max-width: 420px;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.todo-item {
+display: flex;
+align-items: center;
+padding: 14px 16px;
+background:white;
+border: 1.5px solid  rgb(190, 184, 235);
+border-radius: 14px;
+font-size: 15px;
+gap: 10px;
+box-shadow: 0 2px 8px rgba(124, 58, 237, 0.06);
+}
+
+.todo-item:hover {
+border-color: rgba(149, 60, 238, 0.823);
+box-shadow: 0 4px 14px rgba(124, 58, 237, 0.1);
+}
+
+.todo-item p {
+flex: 1;
+color:rgb(31, 31, 109);
+font-size: 15px;
+}
+
+.todo-item input {
+flex: 1;
+border: 1.5px solid rgb(190, 184, 235);
+background: rgba(255, 255, 255, 0.842);
+border-radius: 8px;
+padding: 7px 12px;
+color: rgb(31, 31, 109);
+font-size: 15px;
+font-family: 'DM Sans', sans-serif;
+}
+
+.todo-item input:focus {
+border-color:rgba(89, 2, 177, 0.77);
+box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.12);
+}
+
+#edit-button {
+background: rgba(124, 58, 237, 0.12);
+color: rgb(121, 4, 239);
+border: 1.5px solid rgb(190, 184, 235);
+border-radius: 8px;
+font-size: 13px;
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+padding: 7px 14px;
+}
+
+#delete-button {
+background: rgb(250, 209, 209);
+color: rgb(231, 27, 27);
+border: 1.5px solid rgb(244, 161, 161);
+border-radius: 8px;
+cursor: pointer;
+font-size: 13px;
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+padding: 7px 14px;
+}
+
+#save-button {
+background: rgba(186, 253, 241, 0.868);
+color: rgba(0, 128, 0, 0.83);
+border: 1.5px solid rgba(35, 232, 196, 0.868); 
+border-radius: 8px;
+cursor: pointer;
+font-size: 13px;
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+padding: 7px 14px;
+}
+
+#cancel-button {
+background: rgba(249, 116, 15, 0.407);
+color: rgba(220, 98, 5, 0.967);
+border: 1.5px solid rgba(248, 109, 3, 0.692);
+border-radius: 8px;
+cursor: pointer;
+font-size: 13px;
+font-family: 'DM Sans', sans-serif;
+font-weight: 500;
+padding: 7px 14px;
+}
+
+#edit-button:hover,
+#delete-button:hover,
+#save-button:hover,
+#cancel-button:hover {
+transition: 1s;
+transform: scale(0.89);
 }

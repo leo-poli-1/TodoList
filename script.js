@@ -6,6 +6,7 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault()
     
     const todoDiv=document.createElement('div')
+    todoDiv.classList.add("todo-item")
     todoDiv.setAttribute("id", Date.now()) //generam id unic pentru fiecare input
     
     const textDiv=document.createElement('p')
